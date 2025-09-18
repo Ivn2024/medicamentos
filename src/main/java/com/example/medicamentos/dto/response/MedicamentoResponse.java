@@ -9,6 +9,7 @@ public class MedicamentoResponse {
     private String nombre;
     private String via;
     private String dosis;
+    private String presentacion;
 
     private List<ContraindicacionesDTO> contraindicaciones;
     private List<CuidadosEnfermeriaDTO> cuidadosEnfermeria;
@@ -101,5 +102,13 @@ public class MedicamentoResponse {
 
     public void setNombresComerciales(List<NombresComercialesDto> nombresComerciales) {
         this.nombresComerciales = nombresComerciales;
+    }
+
+    public String getPresentacion() {
+        return presentacion;
+    }
+
+    public void setPresentacion(String presentacion) {
+        this.presentacion = presentacion;
     }
 }
